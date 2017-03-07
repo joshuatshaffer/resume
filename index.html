@@ -1,0 +1,232 @@
+<html>
+
+<head>
+    <title>Resume</title>
+    <link rel="icon" href="http://joshuatshaffer.com/wp-content/uploads/2016/07/cropped-favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="http://joshuatshaffer.com/wp-content/uploads/2016/07/cropped-favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="http://joshuatshaffer.com/wp-content/uploads/2016/07/cropped-favicon-180x180.png">
+    <style>
+        ul {
+            margin: auto 0px;
+        }
+        body {
+          background-color: #f4f4f4;
+        }
+        #page {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          max-width: 7in;
+          min-height: 9.5in;
+          margin: auto;
+          padding: 0.75in;
+          background-color: white;
+          box-shadow: 10px 10px 5px #888888;
+          font-size: 11pt;
+        }
+
+        .section-header {
+          border-top: 1px solid black;
+          border-bottom: 1px solid black;
+          font-weight: bold;
+          font-size: 12pt;
+        }
+
+        .title-bar {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: stretch;
+        }
+
+        #contactInfo {
+            text-align: center;
+        }
+
+        #name {
+          font-size: 2em;
+        }
+
+        #qr-code {
+          height: 0;
+        }
+
+        sup { /* stop <sup>s from pushing lines appart */
+            vertical-align: top;
+            position: relative;
+            top: -0.5em;
+        }
+
+        a{
+          color: inherit; /* blue colors for links too */
+          text-decoration: inherit;
+          background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjMDZjIiBkPSJNMS41IDQuNTE4aDUuOTgyVjEwLjVIMS41eiIvPjxwYXRoIGQ9Ik01Ljc2NSAxSDExdjUuMzlMOS40MjcgNy45MzdsLTEuMzEtMS4zMUw1LjM5MyA5LjM1bC0yLjY5LTIuNjg4IDIuODEtMi44MDhMNC4yIDIuNTQ0eiIgZmlsbD0iIzA2ZiIvPjxwYXRoIGQ9Ik05Ljk5NSAyLjAwNGwuMDIyIDQuODg1TDguMiA1LjA3IDUuMzIgNy45NSA0LjA5IDYuNzIzbDIuODgyLTIuODgtMS44NS0xLjg1MnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=") center right no-repeat;
+          padding-right: 18px;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        #qr-code-link {
+          background: none;
+          padding-right: 0;
+        }
+
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          #page {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            padding: 0in;
+            box-shadow: none;
+          }
+          a {
+            background: none;
+            padding-right: 0px;
+          }
+        }
+        #web-footer {
+          max-width: 7in;
+          margin: auto;
+          margin-top: 1.5em;
+          margin-bottom: 1.5em;
+          display: flex;
+          justify-content: space-around;
+        }
+    </style>
+    <script>
+    window.onload = function () {
+      var h = document.getElementById('contactInfo').offsetHeight;
+      document.getElementById('qr-code').style.height = h;
+    }
+    </script>
+</head>
+
+<body>
+  <div id="page" >
+
+    <div class="title-bar">
+      <div id="contactInfo">
+            <span id="name">Joshua Shaffer</span>
+            <br>
+            (281) 928-3535
+            <br>
+            joshuatshaffer@gmail.com
+            <br>
+            <a href="http://www.joshuatshaffer.com" target="_blank">www.joshuatshaffer.com</a>
+        </div>
+        <a id="qr-code-link" href="https://goo.gl/DhNttX" target="_blank"><img id="qr-code" src="qr-code.svg"/></a>
+    </div>
+
+
+    <div class="section-header">Objectives</div>
+
+    <div class="section-element">To obtain an internship for the summer of 2017 in the field of software development and/or IT.</div>
+
+    <div class="section-header">Education</div>
+
+    <div class="section-element">
+      <b>Texas A&amp;M University</b>, College Station, TX
+      <br>
+      <i>Bachelor of Science in Computer Science</i>, GPA 2.84, December 2018
+    </div>
+
+    <div class="section-header">Experience</div>
+
+    <div class="section-element">
+      <b><a href="http://www.rockdalelibrarytx.org/" target="_blank">Lucy Hill Patterson Memorial Library</a></b>, Rockdale, TX
+      <br>
+      <i>Volunteer IT Helper</i>, Summer 2016
+      <ul>
+        <li>Retrofit equipment to support modern standards.</li>
+        <li>Trained librarians to understand technology and its uses.</li>
+        <li>Polished website for better function and visual appeal.</li>
+      </ul>
+    </div>
+
+    <div class="section-header">Activities</div>
+
+    <div class="section-element">
+      <b><a href="http://www.celtamu.com/" target="_blank">Christian Engineering Leaders</a></b>, Texas A&amp;M University
+      <br>
+      <i>InReach Committee Member</i>, 2014-2015
+      <ul>
+        <li>Planned and organized internal events to improve morale and team unity.</li>
+      </ul>
+    </div>
+
+    <div class="section-element">
+      <b>Vacation Bible School</b>, Rockdale, TX
+      <br>
+      <i>Arts and Crafts Assistant</i>, Summer 2016
+    </div>
+
+    <div class="section-element">
+      <div><b><a href="https://www.thebluealliance.com/team/2882" target="_blank">FIRST Robotics Competition Team 2882</a></b>, Katy, TX</div>
+      <div><i>Team Captain</i>, 2014</div>
+      <ul>
+        <li>Trained new team members in design and operation of the robots.</li>
+        <li>Improved team rank from <a href="https://www.thebluealliance.com/team/2882/2013" target="_blank">43<sup>rd</sup> of 59</a> to <a href="https://www.thebluealliance.com/team/2882/2014" target="_blank">19<sup>th</sup> of 55</a></li>
+        <!--See https://www.thebluealliance.com/event/2014txho-->
+      </ul>
+      <div><i>Lead Programmer</i>, 2013-2014</div>
+      <ul>
+        <li>Programmed NI cRIO with LabVIEW and Java.</li>
+        <li>Developed modular programs for rapid and agile development.</li>
+        <li>Designed and assembled electrical system on robot with limited resources.</li>
+      </ul>
+    </div>
+
+    <div class="section-header">Languages</div>
+    <div class="section-element">
+      Intermediate: Python, Bash, C#, Java, C++
+      <br>
+      Novice: Haskell, JavaScript, HTML, CSS, LabVIEW
+    </div>
+
+    <div class="section-header">Projects</div>
+    <div class="section-element">
+      <b><a href="https://github.com/joshuatshaffer/nand2tetris-extentions" target="_blank" title="View on GitHub">Nand2Tetris Test Script</a></b> Bash
+      <br>
+      I was dissatisfied with the work-flow of the Nand2Tetris Hardware Simulator,
+      so I developed a shell script to streamline it. This script allows my
+      classmates and I to run all of the tests in a project very quickly from
+      the command line. This utility vastly improved my productivity on the homework.
+    </div>
+
+    <div class="section-element">
+      <b><a href="https://github.com/joshuatshaffer/Spider-Game" target="_blank" title="View on GitHub">Spider Game</a></b> Unity3D, C#
+      <br>
+      I developed a code module that allows players to walk on walls and moving
+      objects much like a spider would.
+    </div>
+
+    <div class="section-element">
+      <b><a href="https://github.com/joshuatshaffer/retro-cpu-monitor" target="_blank" title="View on GitHub">Retro CPU Monitor</a></b> Arduino, Python, Haskell
+      <br>
+      Using an Arduino, I built a physical "task manager" that is much more
+      responsive and sensitive than its GUI counterparts.
+    </a></div>
+
+    <div class="section-header">Awards</div>
+
+    <div class="section-element">
+      <a href="https://devpost.com/software/midas-evi574">
+      <b>First place at TAMUHack 2017 Season</b>
+      <br>
+      Major League Hacking - October 2, 2016
+      </a>
+    </div>
+
+  </div>
+  <div id="web-footer" class="no-print">
+    <input type="button" onclick="window.print()" value="Print this page">
+    <a href="as.pdf">View as PDF</a>
+  </div>
+</body>
+
+</html>
