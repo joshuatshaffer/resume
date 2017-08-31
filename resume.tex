@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{qrcode}
+\title{R\'esum\'e}
+\author{Joshua Shaffer}
+
+\renewcommand{\maketitle}{
+    \begin{center}
+        \begin{minipage}{2in}% TODO make width as small as the longest line.
+            \begin{center}
+                \mbox{\huge\bfseries\theauthor}
+                \mbox{\href{mailto:joshuatshaffer@gmail.com}{joshuatshaffer@gmail.com}}
+                \mbox{\href{http://joshuatshaffer.com}{joshuatshaffer.com}}
+            \end{center}
+        \end{minipage}
+        \hfill
+        \qrcode[height=4em]{http://joshuatshaffer.com}
+    \end{center}
+}
+
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{\titlerule\\}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+
+\titlespacing{\section}
+{0em}{-0.5em}{0.55em}
+
+\titlespacing{\subsection}
+{0em}{0.2em}{1em}
+
+\hypersetup{ urlbordercolor={0.75 1 1} }
+
+\begin{document}
+
+\maketitle
+
+\section{Profile}
+
+\noindent
+Student with over 6 years of programming education and a lifelong passion for STEM. \\
+Autodidact who is known to get coding in new languages in less than a day. \\
+Praised for his ability to explain and clearly communicate abstract technical concepts.
+
+\section{Education}
+
+\noindent
+Texas A\&M University, College Station, TX \\
+Bachelor of Science in Computer Science, GPA 2.84, December 2018
+
+\section{Technical Skills}
+
+\subsection{Languages}
+
+Haskell, C++, \LaTeX, Java, C\#, Bash, Python, JavaScript, HTML, CSS, LabVIEW
+
+\subsection{Tools}
+
+Unity3D, MATLAB, Git, GitHub, Arduino
+
+\subsection{Daily OS's}
+
+Linux, macOS
+
+\section{Experience}
+
+\noindent
+Lucy Hill Patterson Memorial Library, Rockdale, TX \\
+Volunteer IT Helper, Summer 2016
+\begin{itemize}
+ \item Retrofit equipment to support modern standards.
+ \item Helped librarians to understand technologies and their uses.
+ \item Polished website for better function and visual appeal.
+\end{itemize}
+
+
+\section{Activities}
+
+\noindent
+\href{https://www.qrz.com/db/AG5JH}{Amateur Radio - AG5JH} \\
+Amateur Extra, since March 8, 2017 \\
+Member of \href{http://w5ac.tamu.edu}{W5AC}, since February 9, 2017 \\
+\href{http://www.celtamu.com/}{Christian Engineering Leaders}, Texas A\&M University \\
+InReach Committee Member, 2014-2015 \\
+Vacation Bible School, Rockdale, TX \\
+Arts and Crafts Assistant, Summer 2016 \\
+\href{https://www.firstinspires.org/robotics/frc}{FIRST Robotics Competition} - \href{https://www.thebluealliance.com/team/2882}{Team 2882}, Katy, TX \\
+Team Captain, 2014 \\
+Lead Programmer, 2013-2014
+
+\section{Projects}
+
+Nand2Tetris Test Script Bash
+I developed a shell script that allows my classmates and me to run all of the tests for a homework project very quickly from the command line. This utility vastly improved my productivity.
+
+Spider Game Unity3D, C\#
+I developed a code module that allows players to walk on walls and moving objects much like a spider would.
+
+Retro CPU Monitor Arduino, Python, Haskell
+Using an Arduino, I built a physical "task manager" that is much more responsive and sensitive than its GUI counterparts.
+
+\section{Awards}
+
+\noindent
+\href{https://devpost.com/software/midas-evi574}{First place at TAMUHack 2017 Season} \\
+Major League Hacking - October 2, 2016
+
+\end{document}
