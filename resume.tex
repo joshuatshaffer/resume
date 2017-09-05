@@ -12,10 +12,10 @@
 {\large\bfseries}
 {}
 {0em}
-{\titlerule\\}[\titlerule]
+{}[\titlerule]
 
 \titlespacing{\section}
-{0em}{-0.5em}{0.55em}
+{0em}{.25em}{0.55em}
 
 \hypersetup{ urlbordercolor={0.75 1 1} }
 
@@ -31,14 +31,14 @@
 \textit{#3}
 
 \footnotesize{#4}
-\end{minipage}\\\vspace{.25cm}}
+\end{minipage}\\\vspace{.1em}}
 
 \newcommand{\jskill}[2]{
 
 \begin{minipage}[t]{.15\textwidth}
 \hfill #1
 \end{minipage}
-\hfill\vline\hfill
+\hspace{.05em}\vline\hspace{.05em}
 \begin{minipage}[t]{.80\textwidth}
 #2
 \end{minipage}\\\vspace{.1em}}
@@ -64,7 +64,7 @@
 
 \noindent
 Texas A\&M University, College Station, TX \\
-Bachelor of Science in Computer Science, GPA 2.84, December 2018
+Bachelor of Science in Computer Science, GPA 2.921, expected December 2018
 
 \section{Experience}
 
@@ -72,14 +72,14 @@ Bachelor of Science in Computer Science, GPA 2.84, December 2018
 \entry
 {2017--Present}
 {Desktop Software Developer}
-{Texas A\&M Univesity}
-{Designed an OS simulation and visualizer to assist in teaching systems programming consepts.}
+{Texas A\&M University}
+{Designed an OS simulation and visualizer to assist in teaching systems programming concepts.}
 
 \entry
 {2016}
 {Volunteer IT Helper}
 {Lucy Hill Patterson Memorial Library}
-{Helped non-technical persons to use and understand digital technoligies.}
+{Helped non-technical persons to use and understand digital technologies.}
 
 \entry
 {2014}
@@ -91,56 +91,58 @@ Bachelor of Science in Computer Science, GPA 2.84, December 2018
 {2013-2014}
 {Robotics programmer}
 {\frc - \frct}
-{Assembled and programmed cRIO for both automonus and remote control opperation.}
+{Assembled and programmed cRIO for both autonomous and remote control operation.}
 
 \section{Technical Skill Highlights}
 
 \noindent
-\jskill{Haskell}{I have made a CPU monitor, an assembler, a tic-tak-toe game, a lambda calculus solver, and a parcer/interpreter. This is my favoret language.}
+\jskill{Haskell}{I have made a CPU monitor, an assembler, a tic-tak-toe game, a lambda calculus solver, and a parser/interpreter. This is my favorite language.}
 
 \jskill{C++}{Wrote an OS simulation and visualizer, programmed an Arduino for my CPU Monitor, wrote a maze generator, and used for most of my college course work.}
 
-\jskill{\LaTeX}{I wrote this r\'esum\'e, reports and memos for work, and mathimatic profes for homework.}
+\jskill{\LaTeX}{I wrote this r\'esum\'e, reports and memos for work, and mathematical proofs for homework.}
 
-\jskill{Java}{Made many small games and desktop apps. Used in \frc\ and two years of highschool classes.}
+\jskill{Java}{Made many small games and desktop apps. Used in \frc\ and two years of high school classes.}
 
-\jskill{C\# \& Unity3d}{Expiramented with game programming and procedual generation. Made a music visualizer.}
-
-\jskill{Bash}{Automated tasks such as compilation and testing. Used in the Linux CLI almost every day.}
+\jskill{C\# \& Unity3d}{Experimented with game programming and procedural generation. Made a music visualizer.}
 
 \jskill{UNIX style 
 
-\hfill workflow}{I use Linux as my primarey OS. For most projects I use Git and an automated build system with a pretty-printer and a linter. I prefer to stay away from monolithic IDE's.}
+\hfill work-flow}{I use Linux as my primary OS. For most projects I use Git and an automated build system such as Make or Cabal. I also use pretty-printers and linters such as clang-format to help enforce code quality. I tend to stay away from monolithic IDE's as they are not as flexible.}
 
-\section{Activities}
+\section{Focus and Passion}
 
-\noindent
-\href{https://www.qrz.com/db/AG5JH}{Amateur Radio - AG5JH} \\
-Amateur Extra, since March 8, 2017 \\
-Member of \href{http://w5ac.tamu.edu}{W5AC}, since February 9, 2017 \\
-\href{http://www.celtamu.com/}{Christian Engineering Leaders}, Texas A\&M University \\
-InReach Committee Member, 2014-2015 \\
-Vacation Bible School, Rockdale, TX \\
-Arts and Crafts Assistant, Summer 2016 \\
-\frc - \frct, Katy, TX \\
-Team Captain, 2014 \\
-Lead Programmer, 2013-2014
+\jskill{Functional 
 
-\section{Projects}
+\hfill Programming} {I was introduced to Haskell in the fall of 2016. Since then I have continued studying and have become very interested in the functional paradigm. I am most intrigued by it's benefits to code correctness, ease of maintenance, and ease of parallelization.}
 
-Nand2Tetris Test Script Bash
-I developed a shell script that allows my classmates and me to run all of the tests for a homework project very quickly from the command line. This utility vastly improved my productivity.
+\jskill{Robotics \& IoT}{I am very interested in how computing can be applied in the physical world and solve tangible problems. I also have a lifelong passion for the physical sciences and it's fun to mix the two.}
 
-Spider Game Unity3D, C\#
-I developed a code module that allows players to walk on walls and moving objects much like a spider would.
+\jskill{Teaching}{I enjoy sharing these passions with others and I am often told that I have a natural talent for explaining things. I want to pursue this at some point in my career.}
 
-Retro CPU Monitor Arduino, Python, Haskell
-Using an Arduino, I built a physical "task manager" that is much more responsive and sensitive than its GUI counterparts.
-
-\section{Awards}
+\section{Achievements}
 
 \noindent
-\href{https://devpost.com/software/midas-evi574}{First place at TAMUHack, 2017 Season} \\
-Major League Hacking - October 2, 2016
+\begin{minipage}[t]{0.33\textwidth}
+\href{https://devpost.com/software/midas-evi574}{Won first place at TAMUHack} \\
+for our stock trading robot.
+
+\hfill - October 2, 2016
+\end{minipage}\hfill
+\begin{minipage}[t]{0.33\textwidth}
+Contributed to open source \\
+by adding config options to Fusuma.
+
+\hfill - April 22, 2017
+\end{minipage}\hfill
+\begin{minipage}[t]{0.33\textwidth}
+Vice President of \href{http://w5ac.tamu.edu}{W5AC} \\
+the Texas A\&M Amateur Radio Club.
+
+\hfill - since February 9, 2017
+\end{minipage}
+
+\begin{center}
+\end{center}
 
 \end{document}
