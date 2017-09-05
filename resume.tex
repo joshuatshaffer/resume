@@ -4,22 +4,9 @@
 \usepackage{hyperref}
 \usepackage[margin=0.75in]{geometry}
 \usepackage{qrcode}
+
 \title{R\'esum\'e}
 \author{Joshua Shaffer}
-
-\renewcommand{\maketitle}{
-    \begin{center}
-        \begin{minipage}{2in}% TODO make width as small as the longest line.
-            \begin{center}
-                \mbox{\huge\bfseries\theauthor}
-                \mbox{\href{mailto:joshuatshaffer@gmail.com}{joshuatshaffer@gmail.com}}
-                \mbox{\href{http://joshuatshaffer.com}{joshuatshaffer.com}}
-            \end{center}
-        \end{minipage}
-        \hfill
-        \qrcode[height=4em]{http://joshuatshaffer.com}
-    \end{center}
-}
 
 \titleformat{\section}
 {\large\bfseries}
@@ -27,31 +14,51 @@
 {0em}
 {\titlerule\\}[\titlerule]
 
-\titleformat{\subsection}[runin]
-{\bfseries}
-{}
-{0em}
-{}[:]
-
-
 \titlespacing{\section}
 {0em}{-0.5em}{0.55em}
 
-\titlespacing{\subsection}
-{0em}{0.2em}{1em}
-
 \hypersetup{ urlbordercolor={0.75 1 1} }
+
+\newcommand{\entry}[4]{
+
+\begin{minipage}[t]{.15\textwidth}
+\hfill #1
+\end{minipage}
+\hfill\vline\hfill
+\begin{minipage}[t]{.80\textwidth}
+#2
+
+\textit{#3}
+
+\footnotesize{#4}
+\end{minipage}\\\vspace{.25cm}}
+
+\newcommand{\jskill}[2]{
+
+\begin{minipage}[t]{.15\textwidth}
+\hfill #1
+\end{minipage}
+\hfill\vline\hfill
+\begin{minipage}[t]{.80\textwidth}
+#2
+\end{minipage}\\\vspace{.1em}}
+
+\newcommand{\frc}{\href{https://www.firstinspires.org/robotics/frc}{FIRST Robotics Competition}}
+\newcommand{\frct}{\href{https://www.thebluealliance.com/team/2882}{Team 2882}}
 
 \begin{document}
 
-\maketitle
-
-\section{Profile}
-
-\noindent
-Student with over 6 years of programming education and a lifelong passion for STEM. \\
-Autodidact who is known to get coding in new languages in less than a day. \\
-Praised for his ability to explain and clearly communicate abstract technical concepts.
+\begin{center}
+ \begin{minipage}{2in}% TODO make width as small as the longest line.
+  \begin{center}
+   \mbox{\huge\bfseries\theauthor}
+   \mbox{\href{mailto:joshuatshaffer@gmail.com}{joshuatshaffer@gmail.com}}
+   \mbox{\href{http://joshuatshaffer.com}{joshuatshaffer.com}}
+  \end{center}
+ \end{minipage}
+ \hfill
+ \qrcode[height=4em]{http://joshuatshaffer.com}
+\end{center}
 
 \section{Education}
 
@@ -59,31 +66,51 @@ Praised for his ability to explain and clearly communicate abstract technical co
 Texas A\&M University, College Station, TX \\
 Bachelor of Science in Computer Science, GPA 2.84, December 2018
 
-\section{Technical Skills}
-
-\subsection{Languages}
-
-Haskell, C++, \LaTeX, Java, C\#, Bash, Python, JavaScript, HTML, CSS, LabVIEW
-
-\subsection{Tools}
-
-Unity3D, MATLAB, Git, GitHub, Arduino
-
-\subsection{Daily OS's}
-
-Linux, macOS
-
 \section{Experience}
 
 \noindent
-Lucy Hill Patterson Memorial Library, Rockdale, TX \\
-Volunteer IT Helper, Summer 2016
-\begin{itemize}
- \item Retrofit equipment to support modern standards.
- \item Helped librarians to understand technologies and their uses.
- \item Polished website for better function and visual appeal.
-\end{itemize}
+\entry
+{2017--Present}
+{Desktop Software Developer}
+{Texas A\&M Univesity}
+{Designed an OS simulation and visualizer to assist in teaching systems programming consepts.}
 
+\entry
+{2016}
+{Volunteer IT Helper}
+{Lucy Hill Patterson Memorial Library}
+{Helped non-technical persons to use and understand digital technoligies.}
+
+\entry
+{2014}
+{Team captain}
+{\frc - \frct}
+{Served as leader. Mentored new members.}
+
+\entry
+{2013-2014}
+{Robotics programmer}
+{\frc - \frct}
+{Assembled and programmed cRIO for both automonus and remote control opperation.}
+
+\section{Technical Skill Highlights}
+
+\noindent
+\jskill{Haskell}{I have made a CPU monitor, an assembler, a tic-tak-toe game, a lambda calculus solver, and a parcer/interpreter. This is my favoret language.}
+
+\jskill{C++}{Wrote an OS simulation and visualizer, programmed an Arduino for my CPU Monitor, wrote a maze generator, and used for most of my college course work.}
+
+\jskill{\LaTeX}{I wrote this r\'esum\'e, reports and memos for work, and mathimatic profes for homework.}
+
+\jskill{Java}{Made many small games and desktop apps. Used in \frc\ and two years of highschool classes.}
+
+\jskill{C\# \& Unity3d}{Expiramented with game programming and procedual generation. Made a music visualizer.}
+
+\jskill{Bash}{Automated tasks such as compilation and testing. Used in the Linux CLI almost every day.}
+
+\jskill{UNIX style 
+
+\hfill workflow}{I use Linux as my primarey OS. For most projects I use Git and an automated build system with a pretty-printer and a linter. I prefer to stay away from monolithic IDE's.}
 
 \section{Activities}
 
@@ -95,7 +122,7 @@ Member of \href{http://w5ac.tamu.edu}{W5AC}, since February 9, 2017 \\
 InReach Committee Member, 2014-2015 \\
 Vacation Bible School, Rockdale, TX \\
 Arts and Crafts Assistant, Summer 2016 \\
-\href{https://www.firstinspires.org/robotics/frc}{FIRST Robotics Competition} - \href{https://www.thebluealliance.com/team/2882}{Team 2882}, Katy, TX \\
+\frc - \frct, Katy, TX \\
 Team Captain, 2014 \\
 Lead Programmer, 2013-2014
 
@@ -113,7 +140,7 @@ Using an Arduino, I built a physical "task manager" that is much more responsive
 \section{Awards}
 
 \noindent
-\href{https://devpost.com/software/midas-evi574}{First place at TAMUHack 2017 Season} \\
+\href{https://devpost.com/software/midas-evi574}{First place at TAMUHack, 2017 Season} \\
 Major League Hacking - October 2, 2016
 
 \end{document}
