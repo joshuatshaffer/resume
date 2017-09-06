@@ -19,20 +19,6 @@
 
 \hypersetup{ urlbordercolor={0.75 1 1} }
 
-\newcommand{\entry}[4]{
-
-\begin{minipage}[t]{.15\textwidth}
-\hfill #1
-\end{minipage}
-\hfill\vline\hfill
-\begin{minipage}[t]{.80\textwidth}
-#2
-
-\textit{#3}
-
-\footnotesize{#4}
-\end{minipage}\\\vspace{.1em}}
-
 \newcommand{\jskill}[2]{
 
 \begin{minipage}[t]{.15\textwidth}
@@ -42,6 +28,14 @@
 \begin{minipage}[t]{.80\textwidth}
 #2
 \end{minipage}\\\vspace{.1em}}
+
+\newcommand{\entry}[4]{
+\jskill{#1}{#2
+
+\textit{#3}
+
+\footnotesize{#4}}
+}
 
 \newcommand{\frc}{\href{https://www.firstinspires.org/robotics/frc}{FIRST Robotics Competition}}
 \newcommand{\frct}{\href{https://www.thebluealliance.com/team/2882}{Team 2882}}
@@ -57,14 +51,14 @@
   \end{center}
  \end{minipage}
  \hfill
- \qrcode[height=4em]{http://joshuatshaffer.com}
+ \qrcode[height=4em]{http://joshuatshaffer.com/resume/}
 \end{center}
 
 \section{Education}
 
 \noindent
-Texas A\&M University, College Station, TX \\
-Bachelor of Science in Computer Science, GPA 2.921, expected December 2018
+BS in Computer Science from Texas A\&M University \\
+GPA 2.921, expected graduation December 2018
 
 \section{Experience}
 
@@ -73,7 +67,7 @@ Bachelor of Science in Computer Science, GPA 2.921, expected December 2018
 {2017--Present}
 {Desktop Software Developer}
 {Texas A\&M University}
-{Designed an OS simulation and visualizer to assist in teaching systems programming concepts.}
+{Designed an OS simulation and a visualizer to assist in teaching Unix programming concepts.}
 
 \entry
 {2016}
@@ -84,33 +78,33 @@ Bachelor of Science in Computer Science, GPA 2.921, expected December 2018
 \entry
 {2014}
 {Team captain}
-{\frc - \frct}
+{\frc\ - \frct}
 {Served as leader. Mentored new members.}
 
 \entry
 {2013-2014}
 {Robotics programmer}
-{\frc - \frct}
+{\frc\ - \frct}
 {Assembled and programmed cRIO for both autonomous and remote control operation.}
 
 \section{Technical Skill Highlights}
 
 \noindent
-\jskill{Haskell}{I have made a CPU monitor, an assembler, a tic-tak-toe game, a lambda calculus solver, and a parser/interpreter. This is my favorite language.}
+\jskill{Haskell}{I have made a \href{https://github.com/joshuatshaffer/retro-cpu-monitor/tree/master/host-haskell}{CPU monitor}, an assembler, a \href{https://github.com/joshuatshaffer/tic-tac-lambda}{tic-tak-toe game}, a \href{https://github.com/joshuatshaffer/de-bruijn-index}{lambda calculus solver}, and a parser/interpreter. This is my favorite language.}
 
-\jskill{C++}{Wrote an OS simulation and visualizer, programmed an Arduino for my CPU Monitor, wrote a maze generator, and used for most of my college course work.}
+\jskill{C++}{Wrote an OS simulation and visualizer, \href{https://github.com/joshuatshaffer/retro-cpu-monitor/tree/master/arduino/retro_cpu_monitor_sketch}{programmed an Arduino for my CPU Monitor}, wrote a \href{https://github.com/joshuatshaffer/Command-Line-Maze}{maze generator}, and used for most of my college course work.}
 
-\jskill{\LaTeX}{I wrote this r\'esum\'e, reports and memos for work, and mathematical proofs for homework.}
+\jskill{\LaTeX}{I wrote \href{https://github.com/joshuatshaffer/resume}{this r\'esum\'e}, reports and memos for work, and mathematical proofs for homework.}
 
 \jskill{Java}{Made many small games and desktop apps. Used in \frc\ and two years of high school classes.}
 
 \jskill{C\# \& Unity3d}{Experimented with game programming and procedural generation. Made a music visualizer.}
 
-\jskill{UNIX style 
+\jskill{Unix style 
 
-\hfill work-flow}{I use Linux as my primary OS. For most projects I use Git and an automated build system such as Make or Cabal. I also use pretty-printers and linters such as clang-format to help enforce code quality. I tend to stay away from monolithic IDE's as they are not as flexible.}
+\hfill work-flow}{I use Linux as my primary OS. For most projects \href{https://github/joshuatshaffer}{I use Git} and an automated build system such as \href{https://en.wikipedia.org/wiki/Make_(software)}{Make} or \href{https://www.haskell.org/cabal/}{Cabal}. I also use pretty-printers and linters such as \href{http://clang.llvm.org/docs/ClangFormat.html}{clang-format} to help enforce code quality. I tend to stay away from monolithic IDE's as they are not as flexible.}
 
-\section{Focus and Passion}
+\section{Focus and Passions}
 
 \jskill{Functional 
 
@@ -124,14 +118,14 @@ Bachelor of Science in Computer Science, GPA 2.921, expected December 2018
 
 \noindent
 \begin{minipage}[t]{0.33\textwidth}
-\href{https://devpost.com/software/midas-evi574}{Won first place at TAMUHack} \\
-for our stock trading robot.
+Won first place at TAMUHack \\
+for \href{https://devpost.com/software/midas-evi574}{our stock trading robot}.
 
 \hfill - October 2, 2016
 \end{minipage}\hfill
 \begin{minipage}[t]{0.33\textwidth}
 Contributed to open source \\
-by adding config options to Fusuma.
+by \href{https://github.com/iberianpig/fusuma/pull/36}{adding config options} to \href{https://github.com/iberianpig/fusuma}{Fusuma}.
 
 \hfill - April 22, 2017
 \end{minipage}\hfill
@@ -142,7 +136,6 @@ the Texas A\&M Amateur Radio Club.
 \hfill - since February 9, 2017
 \end{minipage}
 
-\begin{center}
-\end{center}
+\pagenumbering{gobble}
 
 \end{document}
