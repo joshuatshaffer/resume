@@ -2,7 +2,7 @@
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{hyperref}
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=1.5in]{geometry}
 \usepackage{qrcode}
 
 \title{R\'esum\'e}
@@ -24,7 +24,7 @@
 \begin{minipage}[t]{.15\textwidth}
 \raggedleft{#1}
 \end{minipage}
-\hspace{.05em}\vline\hspace{.05em}
+\hspace{.1em}
 \begin{minipage}[t]{.80\textwidth}
 #2
 \end{minipage}
@@ -47,41 +47,30 @@
 \begin{document}
 
 \begin{center}
- \begin{minipage}{2in}% TODO make width as small as the longest line.
-  \begin{center}
-   \mbox{\huge\bfseries\theauthor}
-   \mbox{\href{mailto:joshuatshaffer@gmail.com}{joshuatshaffer@gmail.com}}
-   \mbox{\href{http://joshuatshaffer.com}{joshuatshaffer.com}}
-  \end{center}
- \end{minipage}
- \hfill
- \qrcode[height=4em]{http://joshuatshaffer.com/resume/}
+ \mbox{\huge\bfseries\theauthor} \\
+ \mbox{\href{https://joshuatshaffer.com}{https://joshuatshaffer.com}} \\
+ \mbox{\href{mailto:joshuatshaffer@gmail.com}{joshuatshaffer@gmail.com}} \\
+ \mbox{+1 (281) 928-3535}
 \end{center}
-
-\section{Education}
-
-\begin{minipage}[t]{0.5\textwidth}
- BS in Computer Science from Texas A\&M University \\
- GPA 2.921, expected graduation May 2019
-\end{minipage}
-\begin{minipage}[t]{0.5\textwidth}
- Morton Ranch High School, Katy Texas \\
- GPA 4.125, graduated 52\textsuperscript{nd} of 702, June 2014
-\end{minipage}
 
 \section{Experience}
 
 \entry
-{2017--Present}
-{Desktop Software Developer}
-{Texas A\&M University}
-{Designed an OS simulation and a visualizer to assist in teaching Unix programming concepts.}
+{2018--Present}
+{Full Stack Web Developer}
+{Vize}
+{Ended code formatting arguments by automating the formatting.
+
+Improved code quality by adding code review to our workflow.
+
+Lead the escape from a restrictive framework via incremental migration.
+}
 
 \entry
-{2016}
-{Volunteer IT Helper}
-{Lucy Hill Patterson Memorial Library}
-{Helped non-technical persons to use and understand digital technologies.}
+{2017--2018}
+{Desktop Software Developer}
+{Texas A\&M University}
+{Saved a lot of time grading homework by automating the process with Bash.}
 
 \entry
 {2014}
@@ -95,76 +84,34 @@
 {\frc\ - \frct}
 {Assembled and programmed cRIO for both autonomous and remote control operation.}
 
-\section{Technical Skill Highlights}
+\section{Technical Skills}
 
-\jskill{Haskell}{I have made a
- \git{retro-cpu-monitor/tree/master/host-haskell}{CPU monitor}, an assembler, a
- \git{tic-tac-lambda}{tic-tak-toe game}, a \git{de-bruijn-index}{lambda calculus
-solver}, and a parser/interpreter. This is my favorite language.}
+{\centering
 
-\jskill{C \& C++}{Writing an OS simulation and visualizer,
- \git{retro-cpu-monitor/tree/master/arduino/retro_cpu_monitor_sketch}{programmed
-  an Arduino for my CPU Monitor}, wrote a \git{command-line-maze}{maze generator},
- \git{fusuma-suid-wrapper}{a security wrapper}, and used for most of my college
-course work.}
+\textbf{Full stack web development}
 
-\jskill{\LaTeX}{I wrote \git{resume}{this r\'esum\'e}, reports and memos for
-work, and mathematical proofs for homework.}
+React, TypeScript, GraphQL, Node.js, NGINX, PostgreSQL, Linux, Ansible
 
-\jskill{Java}{Made many small games and desktop apps. Used in \frc\ and two
-years of high school classes.}
+\textbf{Diverse programming paradigms}
 
-\jskill{C\# \& Unity3d}{Experimented with game programming and procedural
-generation. Made a music visualizer.}
+Java, Haskell, Functional Programming
 
-\jskill{Unix style\\work-flow}{I use Linux as my primary OS. For most projects
- \git{}{I use Git} and an automated build system such as
- \href{https://en.wikipedia.org/wiki/Make_(software)}{Make} or
- \href{https://www.haskell.org/cabal/}{Cabal}. I also use pretty-printers and
- linters such as \href{http://clang.llvm.org/docs/ClangFormat.html}{clang-format}
- to help enforce code quality. I tend to stay away from monolithic IDE's as they
-are not as flexible.}
+\textbf{At home on the command line}
 
-\jskill{Et Cetra}{I am also familiar with many other languages and tools such
- as: Wordpress, JavaScript, HTML, CSS, Python, Bash, Lua, LabVIEW, MATLAB,
-Arduino}
+Linux, bash, git, grep, sed, awk, systemd
 
-\section{Focus and Passions}
+\textbf{Polyglot}
 
-\jskill{Functional\\Programming} {I was introduced to Haskell in the fall of
- 2016. Since then I have continued studying and have become very interested in
- the functional paradigm. I am most intrigued by it's benefits to code
-correctness, ease of maintenance, and ease of parallelization.}
+Haskell, JavaScript, C, C++, Java, Bash, LaTeX, Python
 
-\jskill{Robotics \& IoT}{I am very interested in how computing can be applied in
- the physical world and solve tangible problems. I also have a lifelong passion
-for the physical sciences and it's fun to mix the two.}
+}
 
-\jskill{Teaching}{I enjoy sharing these passions with others and I am often told
- that I have a natural talent for explaining things. I want to pursue this at
-some point in my career.}
-
-\section{Achievements}
+\section{Education}
 
 \noindent
-\begin{minipage}[t]{0.33\textwidth}
- Won first place at TAMUHack \\
- for \href{https://devpost.com/software/midas-evi574}{our stock trading robot}.
+BS in Computer Science from Texas A\&M University \\
+GPA 2.644, expected graduation December 2019
 
- \hfill - October 2, 2016 \end{minipage}\hfill
- \begin{minipage}[t]{0.33\textwidth} Contributed to open source \\ by
-  \href{https://github.com/iberianpig/fusuma/pull/36}{adding config options} to
-  \href{https://github.com/iberianpig/fusuma}{Fusuma}.
-
-  \hfill - April 22, 2017
- \end{minipage}\hfill
- \begin{minipage}[t]{0.33\textwidth}
-  Vice President of \href{http://w5ac.tamu.edu}{W5AC},  \\
-  the Texas A\&M Amateur Radio Club.
-
-  \hfill - since February 9, 2017
- \end{minipage}
-
- \pagenumbering{gobble}
+\pagenumbering{gobble}
 
 \end{document}
