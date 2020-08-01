@@ -1,104 +1,80 @@
-\documentclass{article}
-\usepackage{titlesec}
-\usepackage{titling}
-\usepackage{hyperref}
-\usepackage[margin=1.5in]{geometry}
-\usepackage{qrcode}
+\documentclass{resume}
 
 \title{R\'esum\'e}
 \author{Joshua Shaffer}
 
-\titleformat{\section}
-{\large\bfseries}
-{}
-{0em}
-{}[\titlerule]
-
-\titlespacing{\section}
-{0em}{.25em}{0.55em}
-
-\hypersetup{ urlbordercolor={0.75 1 1} }
-
-\newcommand{\jskill}[2]{
-\noindent
-\begin{minipage}[t]{.15\textwidth}
-\raggedleft{#1}
-\end{minipage}
-\hspace{.1em}
-\begin{minipage}[t]{.80\textwidth}
-#2
-\end{minipage}
-
-\vspace{0.75em}}
-
-\newcommand{\entry}[4]{
-\jskill{#1}{#2
-
-\textit{#3}
-
-\footnotesize{#4}}
-}
-
 \begin{document}
 
-\begin{center}
-    \mbox{\huge\bfseries\theauthor} \\
-    \mbox{\href{https://joshuatshaffer.com}{https://joshuatshaffer.com}} \\
-    \mbox{\href{https://github.com/joshuatshaffer}{https://github.com/joshuatshaffer}} \\
-    \mbox{\href{mailto:joshua@joshuatshaffer.com}{joshua@joshuatshaffer.com}} \\
-    \mbox{\href{tel:+12819283535}{+1\,(281)\,928-3535}}
-\end{center}
+{\Huge\bfseries\theauthor}
+\hfill
+\begin{minipage}[c]{.50\textwidth}
+    \begin{center}
+        \href{https://joshuatshaffer.com}{https://joshuatshaffer.com} \\[0.3em]
+        \href{https://github.com/joshuatshaffer}{https://github.com/joshuatshaffer} \\[0.3em]
+        \href{mailto:joshua@joshuatshaffer.com}{joshua@joshuatshaffer.com} \\[0.3em]
+        \href{tel:+12819283535}{+1\,(281)\,928-3535}
+    \end{center}
+\end{minipage}
 
 \section{Experience}
 
 \entry
-{2018--Present}
+{2018--Present} % January 2018
 {Co-founder \& Full Stack Web Developer}
-{Vize}
-{Lead incremental migration between databases and out of a Javascript framework.
-
-    Automated code formatting to end arguments.
-
-    Streamlined collaboration in a team of 5 developers by implementing Git workflow and code review.
-
+{Vize (Startup)}
+{
+    \begin{itemize}
+        %\item Lead incremental migration between databases and out of a Javascript framework.
+        \item Improved code quality and streamlined collaboration in a team of 5
+              developers by implementing a Git workflow and code review process.
+        \item Reduced build and deploy time from 30 minutes to 5 minutes by
+              converting to a new build system and PaaS (Webpack and Heroku).
+              %\item People keep telling me that I'm really good at teaching.
+              %\item I have been making many new features and improvements and yet I
+              %      have more deletions than additions as recorded by git. Track
+              %      record of adding features without bloating code.
+        \item Reduced CSS code bloat by thousands of lines by modularizing
+              styles with Styled Components and scanning for dead code with
+              shell scripting.
+        \item Designed and implemented an API for both mobile and web apps using
+              GraphQL, Passport.js, and Express.js.
+        \item Learned and started using new technologies and tools and
+              transferred knowledge to teammates.
+              %\item Converted to Typescript to catch and fix many errors.
+              %\item Helped Julian understand SQL and relational algebra.
+    \end{itemize}
 }
 
 \entry
 {2017-2018}
-{}
+{Student Assistant}
 {Texas A\&M University System}
-{Automated testing of homework solutions, saved a lot of time.
-
-    Wrote new class material.}
+{
+    \begin{itemize}
+        \item Reduced time of testing homework solutions from tens of minutes to
+              under five seconds with shell scripting.
+    \end{itemize}
+}
 
 \section{Technical Skills}
 
- {\centering
+\begin{center}
+    \textbf{Front end}
 
-  \textbf{Full stack web development}
+    ReactJS, HTML, CSS, TypeScript, GraphQL, GatsbyJS, Webpack
 
-  ReactJS, HTML, CSS, TypeScript, GraphQL, Node.js, NGINX, PostgreSQL, Linux, Ansible
+    \textbf{Back end}
 
-  \textbf{Diverse programming paradigms}
+    Node.js, NGINX, PostgreSQL, TypeScript, GraphQL, Express.js
 
-  Java, Haskell, Functional Programming
+    \textbf{Dev/Opps}
 
-  \textbf{At home on the command line}
+    Linux, Ansible, Docker, Docker Compose, Heroku, AWS, systemd, Bash
 
-  Linux, bash, git, grep, sed, awk, systemd
+    \textbf{What sounds better ``Polyglot'' or ``Diverse Working Knowledge''?}
 
-  \textbf{Polyglot}
-
-  Haskell, JavaScript, C, C++, Java, Bash, LaTeX, Python
-
-  %\textbf{An eye for automation}
-
-  %Automation of tasks with scripts. Identifying opportunities to improve processes. Vize git
-  %workflow, branches and pull requests. Exam exemption grade calculator. test automation
-  %script.
-
-  %I've done my own website and server. NGINX, GatsbyJS, Linux VPS on Linode, Nextcloud via Snap.
- }
+    Haskell, JavaScript, C, C++, Java, Bash, LaTeX, Python, C\#
+\end{center}
 
 \section{Education}
 
@@ -107,8 +83,5 @@ Studied Computer Science at Texas A\&M University\\
 114 credit hours completed\\[1em]
 Morton Ranch High School, Katy Texas\\
 GPA 4.125, graduated 52nd of 702 in June 2014
-
-
-\pagenumbering{gobble}
 
 \end{document}
