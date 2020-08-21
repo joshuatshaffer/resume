@@ -4,11 +4,7 @@
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage[margin=1.3in]{geometry}
-\usepackage[printwatermark]{xwatermark}
-\usepackage{xcolor}
 \usepackage[pdfusetitle]{hyperref}
-
-\newwatermark[allpages,color=red!5,angle=50,scale=5,xpos=-15,ypos=40]{DRAFT}
 
 \titleformat{\section}
 {\large\bfseries}
